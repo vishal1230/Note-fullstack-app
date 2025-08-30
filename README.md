@@ -83,7 +83,6 @@ You will need the following tools installed on your computer:
       ```bash
       npm run dev
       ```
-    The backend will be running on `http://localhost:5000`.
 
 3.  **Setup the Frontend:**
     - Open a new terminal window.
@@ -98,7 +97,6 @@ You will need the following tools installed on your computer:
       ```bash
       npm run dev
       ```
-    The frontend will be running on `http://localhost:5173`.
 
 ---
 
@@ -130,10 +128,11 @@ GOOGLE_CLIENT_SECRET=your_google_client_secret
 
 # Frontend URL (for redirects)
 CLIENT_URL=http://localhost:5173
-
+```
 Author
 Vishal Yadav
 
-GitHub: vishal1230
+GitHub:[vishal1230](https://github.com/vishal1230/)
 
-LinkedIn: https://www.linkedin.com/in/vishal-yadav-35b027281
+LinkedIn:[vishal-yadav](https://www.linkedin.com/in/vishal-yadav-35b027281)
+
