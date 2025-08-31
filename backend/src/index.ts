@@ -14,7 +14,7 @@ connectDB();
 const app = express();
 
 // Use CORS - Adjust origin for production
-app.use(cors({ origin: 'http://localhost:5173' })); 
+app.use(cors({ origin: '*' })); 
 app.use(express.json());
 
 // Initialize Passport Middleware
