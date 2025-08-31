@@ -22,7 +22,7 @@ router.get(
 
 router.get(
     '/google/callback',
-    passport.authenticate('google', { failureRedirect: 'http://localhost:5173/signin', session: false }),
+    passport.authenticate('google', { failureRedirect: 'https://note-fullstack-app-2dr7.vercel.app/signin', session: false }),
     (req, res) => {
         const user = req.user as IUser;
         const payload = {
@@ -31,7 +31,7 @@ router.get(
             },
         };
         const token = jwt.sign(payload, process.env.JWT_SECRET as string, { expiresIn: '3d' });
-        res.redirect(`http://localhost:5173/dashboard?token=${token}`);
+        res.redirect(`https://note-fullstack-app-2dr7.vercel.app/signin/dashboard?token=${token}`);
     }
 );
 
