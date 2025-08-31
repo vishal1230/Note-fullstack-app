@@ -67,7 +67,7 @@ const SignUpPage: React.FC = () => {
                 {/* --- Google Sign-Up Button --- */}
                 <div className="my-4">
                     <a
-                        href="/api/auth/google"
+                        href="https://note-fullstack-app.vercel.app/api/auth/google"
                         className="w-full flex items-center justify-center py-2.5 px-4 border border-gray-300 rounded-md shadow-sm text-sm font-medium text-gray-700 bg-white hover:bg-gray-50 transition-colors"
                     >
                         <svg className="w-5 h-5 mr-3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
