@@ -31,7 +31,7 @@ router.get(
             },
         };
         const token = jwt.sign(payload, process.env.JWT_SECRET as string, { expiresIn: '3d' });
-        res.redirect(`https://note-fullstack-app-2dr7.vercel.app/signin/dashboard?token=${token}`);
+        res.redirect(`https://note-fullstack-app-2dr7.vercel.app/dashboard?token=${token}`);
     }
 );
 
