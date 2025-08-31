@@ -101,15 +101,18 @@ const DashboardPage: React.FC = () => {
     }
 
     return (
-        <div className="bg-gray-50 min-h-screen">
-            <header className="bg-white shadow-sm">
-                <div className="max-w-4xl mx-auto py-4 px-4 sm:px-6 lg:px-8 flex justify-between items-center">
+        <div className="bg-slate-100 min-h-screen">
+            <header className="bg-white border-b border-gray-200">
+                 <div className="max-w-5xl mx-auto py-4 px-4 sm:px-6 lg:px-8 flex justify-between items-center">
                     <h1 className="text-2xl font-bold text-gray-900">
                         Welcome, {user?.name || 'User'}!
                     </h1>
-                    <Button onClick={handleLogout} className="bg-red-500 hover:bg-red-600 !w-auto">
+                        <Button 
+                        onClick={handleLogout} 
+                        className="!w-auto font-semibold text-gray-600 bg-transparent border border-gray-300 hover:bg-red-500 hover:text-white hover:border-transparent transition-colors duration-300"
+                            >
                         Logout
-                    </Button>
+                        </Button>
                 </div>
             </header>
 
@@ -117,7 +120,7 @@ const DashboardPage: React.FC = () => {
                 {error && <p className="text-red-500 bg-red-100 p-3 mb-4 rounded">{error}</p>}
 
                 {/* Note Creation Form */}
-                <div className="bg-white p-6 rounded-lg shadow mb-6">
+                <div className="bg-white p-6 rounded-xl shadow-lg mb-8">
                     <form onSubmit={handleCreateNote}>
                         <h2 className="text-lg font-medium text-gray-900 mb-2">Create a new note</h2>
                         <textarea
