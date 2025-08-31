@@ -2,7 +2,7 @@ import axios from 'axios';
 
 // The base URL for your backend API.
 // Make sure your backend is running on port 5000.
-const API_URL = '/api';
+const API_URL = 'https://note-fullstack-app.vercel.app/api';
 
 const api = axios.create({
   baseURL: API_URL,
