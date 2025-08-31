@@ -8,7 +8,7 @@ NoteHD is a modern, full-stack note-taking application designed with a clean use
 
 ### Live Demo
 
-*[Link to your deployed application here]*
+[*[Visit NoteHD]*](https://note-fullstack-app-2dr7.vercel.app/)
 
 
 ---
